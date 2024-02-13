@@ -16,7 +16,7 @@ const CardContent = ({
     return (
         <div className="card__content">
             {title && <h2 className="card__title">{title}</h2>}
-            {subTitle && <h3 className="card__subtitle">{subTitle}</h3>}
+            {subTitle && <p className="card__subtitle">{subTitle}</p>}
             {description && <p className="card__description">{description}</p>}
             {footer && <div className="card__footer">{footer}</div>}
         </div>

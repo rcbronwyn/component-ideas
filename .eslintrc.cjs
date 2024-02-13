@@ -7,7 +7,6 @@ module.exports = {
     'airbnb-typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
-    'plugin:storybook/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended'
   ],
@@ -36,13 +35,12 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-fallthrough': 'off',
     'no-plusplus': 'off',
-    // TODO: fix all occurrences of these warnings and remove the rules
-    '@typescript-eslint/no-unused-vars': 'warn', // !!! We really need to fix these occurrences.
+    '@typescript-eslint/no-unused-vars': 'warn', 
     '@typescript-eslint/no-unused-expressions': 'warn',
     '@typescript-eslint/no-use-before-define': 'warn',
     '@typescript-eslint/naming-convention': 'warn',
-    '@typescript-eslint/no-shadow': 'warn', // !!! This can make code really hard to understand if we don't address it.
-    '@typescript-eslint/ban-types': 'warn', // !!! We really should address these too. This will make our code self-documenting for consumers.
+    '@typescript-eslint/no-shadow': 'warn',
+    '@typescript-eslint/ban-types': 'warn', 
     'react/jsx-no-useless-fragment': 'warn',
     'react/no-array-index-key': 'warn',
     'react/no-children-prop': 'warn',
@@ -62,7 +60,6 @@ module.exports = {
     ],
     'import/extensions': 'warn',
     'import/no-cycle': 'warn',
-    // These `jsx-a11y` rules give us great 508 advice.
     'jsx-a11y/no-noninteractive-element-to-interactive-role': 'warn',
     'jsx-a11y/no-noninteractive-element-interactions': 'warn',
     'jsx-a11y/aria-activedescendant-has-tabindex': 'warn',
